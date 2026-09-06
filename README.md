@@ -92,6 +92,4 @@ Whichever host is used, confirm the resulting URL opens the app directly and is 
 
 No accounts or credentials — favorites are tied to an anonymous browser id, not a login.
 
-## Screenshots / Demo
 
-_Add a screenshot or short screen recording of the mood step, a flipped postcard with the heart saved, and the Saved view here before submitting._
