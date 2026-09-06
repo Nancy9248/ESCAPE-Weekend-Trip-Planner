@@ -49,21 +49,109 @@
     </div>
   </section>
 
-  <!-- STEP 2: RESULTS -->
-  <section class="step" data-step="2">
-    <div class="results-head">
-      <div>
-        <p class="kicker" id="resultsKicker">Step three</p>
-        <h1 class="headline" id="resultsHeadline" style="max-width:none;">Postcards worth chasing</h1>
-      </div>
-      <div class="results-actions">
-        <button class="link-btn" id="shuffleBtn">Shuffle</button>
-        <button class="link-btn" id="startOverBtn">Start over</button>
-      </div>
-    </div>
-    <p class="results-count" id="resultsCount"></p>
+ <!-- STEP 2: RESULTS / DESTINATION DISCOVERY -->
+<section class="step" data-step="2">
 
-    <div class="desk" id="desk"></div>
+  <div class="results-head">
+    <div>
+      <p class="kicker" id="resultsKicker">Step three · Discover</p>
+      <h1 class="headline" id="resultsHeadline" style="max-width:none;">
+        Postcards worth chasing
+      </h1>
+    </div>
+
+    <div class="results-actions">
+      <button class="link-btn" id="shuffleBtn" type="button">
+        Shuffle
+      </button>
+
+      <button class="link-btn" id="startOverBtn" type="button">
+        Start over
+      </button>
+    </div>
+  </div>
+
+  <!-- DESTINATION SEARCH, FILTERING AND SORTING -->
+  <div
+    id="discoveryTools"
+    class="escape-tools"
+    role="search"
+    aria-label="Destination discovery tools"
+  >
+
+    <label class="escape-field">
+      <span>Search destinations</span>
+      <input
+        id="destinationSearch"
+        type="search"
+        placeholder="Search by destination or vibe..."
+        autocomplete="off"
+        aria-label="Search destinations"
+      >
+    </label>
+
+    <label class="escape-field">
+      <span>Filter by mood</span>
+      <select id="moodFilter" aria-label="Filter destinations by mood">
+        <option value="">All moods</option>
+        <option value="chill">Chill &amp; Slow</option>
+        <option value="wild">Wild &amp; Outdoors</option>
+        <option value="romantic">Romantic Escape</option>
+        <option value="culture">Culture &amp; Food</option>
+      </select>
+    </label>
+
+    <label class="escape-field">
+      <span>Filter by travel range</span>
+      <select id="distanceFilter" aria-label="Filter destinations by travel range">
+        <option value="">All ranges</option>
+        <option value="near">Under 3 hrs</option>
+        <option value="mid">3–6 hrs</option>
+        <option value="far">Flight worth it</option>
+      </select>
+    </label>
+
+    <label class="escape-field">
+      <span>Sort destinations</span>
+      <select id="sortSelect" aria-label="Sort destinations">
+        <option value="recommended">Recommended</option>
+        <option value="name">Name A–Z</option>
+        <option value="name-desc">Name Z–A</option>
+        <option value="shortest">Shortest travel</option>
+      </select>
+    </label>
+
+  </div>
+
+  <!-- PERSONALIZED RECOMMENDATION STATUS -->
+  <div
+    id="recommendationStatus"
+    class="escape-plan-summary"
+    aria-live="polite"
+  >
+    ✨ Personalized recommendations based on your mood and travel range.
+  </div>
+
+  <p class="results-count" id="resultsCount"></p>
+
+  <!-- DESTINATION DISCOVERY CARDS -->
+  <div
+    class="desk"
+    id="desk"
+    aria-label="Weekend destination recommendations"
+  ></div>
+
+  <!-- WEEKEND TRIP PLANNING -->
+  <section
+    id="weekendPlan"
+    class="escape-plan-summary"
+    aria-labelledby="weekendPlanTitle"
+  >
+    <strong id="weekendPlanTitle">🗓 Weekend Trip Plan</strong>
+    <div id="planSummary">
+      Add destinations to build your weekend plan.
+    </div>
+  </section>
 
     <div class="step-actions">
       <button class="back-btn" data-back="1">&larr; adjust range</button>
