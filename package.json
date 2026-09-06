@@ -1,0 +1,13 @@
+{
+  "name": "escape-weekend-trip-planner",
+  "version": "1.0.0",
+  "description": "ESCAPE — Weekend Trip Planner: a mood-first weekend trip discovery app with an Express + SQLite backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "better-sqlite3": "^11.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+escape.db
+escape.db-shm
+escape.db-wal
+server.log
+.env

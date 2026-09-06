@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESCAPE — Weekend Trip Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="mark"><span>&#9737;</span>ESCAPE</div>
+    <div class="topbar-right">
+      <button class="link-btn" id="savedNavBtn">Saved <span id="savedCount"></span></button>
+      <div class="progress" id="progress">
+        <i class="on" data-step="0"></i><i data-step="1"></i><i data-step="2"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 0: MOOD -->
+  <section class="step active" data-step="0">
+    <p class="kicker">Step one</p>
+    <h1 class="headline">Which weekend are you in the mood for?</h1>
+    <p class="sub">Pick the feeling you're chasing. We'll set the range next, then hand you a handful of postcards worth packing a bag for.</p>
+
+    <div class="mood-grid" id="moodGrid"></div>
+
+    <div class="surprise-row">
+      <button class="link-btn" id="surpriseBtn">Not sure yet? Let it pick for you</button>
+    </div>
+  </section>
+
+  <!-- STEP 1: DISTANCE -->
+  <section class="step" data-step="1">
+    <p class="kicker">Step two</p>
+    <h1 class="headline">How far will you go?</h1>
+    <p class="sub">Weekends are short. Tell us how much of it you're willing to spend getting there.</p>
+
+    <div class="chip-row" id="distanceChips"></div>
+
+    <div class="step-actions">
+      <button class="back-btn" data-back="0">&larr; back to mood</button>
+    </div>
+  </section>
+
+  <!-- STEP 2: RESULTS -->
+  <section class="step" data-step="2">
+    <div class="results-head">
+      <div>
+        <p class="kicker" id="resultsKicker">Step three</p>
+        <h1 class="headline" id="resultsHeadline" style="max-width:none;">Postcards worth chasing</h1>
+      </div>
+      <div class="results-actions">
+        <button class="link-btn" id="shuffleBtn">Shuffle</button>
+        <button class="link-btn" id="startOverBtn">Start over</button>
+      </div>
+    </div>
+    <p class="results-count" id="resultsCount"></p>
+
+    <div class="desk" id="desk"></div>
+
+    <div class="step-actions">
+      <button class="back-btn" data-back="1">&larr; adjust range</button>
+      <button class="link-btn" id="suggestToggleBtn">Don't see your favorite spot? Suggest one</button>
+    </div>
+
+    <form id="suggestForm" class="suggest-form hidden">
+      <h3>Suggest a destination</h3>
+      <p class="suggest-note">Sent to the ESCAPE team for review — not published automatically.</p>
+      <div class="field-row">
+        <label>Destination name
+          <input type="text" name="name" required maxlength="60" placeholder="e.g. Panhala Fort">
+        </label>
+        <label>Best for
+          <select name="mood" required>
+            <option value="" disabled selected>Choose a mood</option>
+            <option value="chill">Chill & Slow</option>
+            <option value="wild">Wild & Outdoors</option>
+            <option value="romantic">Romantic Escape</option>
+            <option value="culture">Culture & Food</option>
+          </select>
+        </label>
+        <label>Travel range
+          <select name="distance" required>
+            <option value="" disabled selected>Choose a range</option>
+            <option value="near">Under 3 hrs</option>
+            <option value="mid">3–6 hrs</option>
+            <option value="far">Flight worth it</option>
+          </select>
+        </label>
+      </div>
+      <label>One-line tagline
+        <input type="text" name="tagline" required maxlength="90" placeholder="e.g. A quiet fort with a view worth the climb.">
+      </label>
+      <label>Anything else? (optional)
+        <textarea name="note" rows="2" maxlength="300" placeholder="What should the itinerary include?"></textarea>
+      </label>
+      <div class="suggest-actions">
+        <button type="submit" class="chip">Send suggestion</button>
+        <span class="suggest-status" id="suggestStatus"></span>
+      </div>
+    </form>
+
+    <div class="step-actions" style="margin-top:0;"></div>
+  </section>
+
+  <!-- STEP 3: SAVED -->
+  <section class="step" data-step="3">
+    <div class="results-head">
+      <div>
+        <p class="kicker">Your list</p>
+        <h1 class="headline" style="max-width:none;">Saved for later</h1>
+      </div>
+      <div class="results-actions">
+        <button class="link-btn" data-back="2">Back to results</button>
+      </div>
+    </div>
+    <p class="results-count" id="savedResultsCount"></p>
+    <div class="desk" id="savedDesk"></div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

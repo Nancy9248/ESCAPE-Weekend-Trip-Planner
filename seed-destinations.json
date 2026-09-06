@@ -1,0 +1,46 @@
+[
+  { "id": "matheran", "mood": "chill", "distance": "near", "name": "Matheran",
+    "tagline": "No cars, no noise — just red mud trails.", "stamp": "≈2 hrs from Pune",
+    "days": [["Sat", "Horseback to Panorama Point, sunset at Louisa Point."], ["Sun", "Toy train down the hill, market-lane snacking."]],
+    "season": "Best October to February.", "palette": ["#8a5a3b", "#c8935f", "#6b8f5a"] },
+
+  { "id": "lonavala", "mood": "chill", "distance": "near", "name": "Lonavala & Khandala",
+    "tagline": "Misty ghats and waterfall chai stops.", "stamp": "≈2 hrs from Pune",
+    "days": [["Sat", "Bhushi Dam splash, Tiger's Leap viewpoint."], ["Sun", "Karla Caves at sunrise, chikki on the drive home."]],
+    "season": "Best June to September, for the monsoon green.", "palette": ["#3f6b64", "#7fa39a", "#c69a2e"] },
+
+  { "id": "mahabaleshwar", "mood": "chill", "distance": "mid", "name": "Mahabaleshwar & Panchgani",
+    "tagline": "Strawberry fields and valley viewpoints.", "stamp": "≈5 hrs from Pune",
+    "days": [["Sat", "Venna Lake boating, a strawberry-farm stop."], ["Sun", "Sunrise at Arthur's Seat, Panchgani Table Land."]],
+    "season": "Best Mar–May and Sep–Nov.", "palette": ["#4a7a5f", "#a7c98f", "#c69a2e"] },
+
+  { "id": "bhandardara", "mood": "wild", "distance": "near", "name": "Bhandardara",
+    "tagline": "Star trails over a quiet reservoir.", "stamp": "≈3 hrs from Pune",
+    "days": [["Sat", "Trek to Ratangad's base, evening by Arthur Lake."], ["Sun", "Sunrise at Umbrella Falls."]],
+    "season": "Best August to October.", "palette": ["#2d4a52", "#5c8a83", "#c69a2e"] },
+
+  { "id": "coorg", "mood": "wild", "distance": "far", "name": "Coorg",
+    "tagline": "Coffee estates wrapped in morning fog.", "stamp": "Flight + ~3 hr drive",
+    "days": [["Sat", "Abbey Falls, a walk through the plantations."], ["Sun", "Dubare elephant camp, a foggy dawn viewpoint."]],
+    "season": "Best October to March.", "palette": ["#3a5a3f", "#6f8f5a", "#b5502a"] },
+
+  { "id": "alibaug", "mood": "romantic", "distance": "near", "name": "Alibaug",
+    "tagline": "Beach bungalows a ferry ride away.", "stamp": "≈3 hrs from Pune",
+    "days": [["Sat", "Walk to Kolaba Fort at low tide, seafood at sunset."], ["Sun", "A slow morning on the sand, home by noon."]],
+    "season": "Best November to February.", "palette": ["#c9673f", "#e3b873", "#3f6b64"] },
+
+  { "id": "goa", "mood": "romantic", "distance": "far", "name": "Goa, North",
+    "tagline": "Warm sand, later sunsets, no itinerary.", "stamp": "≈8 hrs road / 1 hr flight",
+    "days": [["Sat", "Anjuna flea market, sunset at Vagator cliffs."], ["Sun", "A slow breakfast, shack lunch before flying back."]],
+    "season": "Best November to February.", "palette": ["#b5502a", "#e3b873", "#2d4a52"] },
+
+  { "id": "nashik", "mood": "culture", "distance": "mid", "name": "Nashik",
+    "tagline": "Vineyard rows and unhurried lunches.", "stamp": "≈4.5 hrs from Pune",
+    "days": [["Sat", "A vineyard tour and tasting flight, Godavari ghat walk."], ["Sun", "Pandavleni caves, misal for breakfast."]],
+    "season": "Best October to February.", "palette": ["#6b3f2d", "#c69a2e", "#7fa39a"] },
+
+  { "id": "hampi", "mood": "culture", "distance": "far", "name": "Hampi",
+    "tagline": "Boulder-strewn ruins of a lost empire.", "stamp": "Flight + ~1.5 hr drive",
+    "days": [["Sat", "Virupaksha Temple, sunset atop Matanga Hill."], ["Sun", "A coracle ride, the stone chariot at Vittala Temple."]],
+    "season": "Best October to February.", "palette": ["#8a5a3b", "#c9673f", "#3f6b64"] }
+]
